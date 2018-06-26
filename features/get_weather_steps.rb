@@ -10,5 +10,7 @@ end
 Then (/^the system returns the following information:$/) do | table |
   array = JSON.parse(@current_response)
   sleep 1
+  expected_data = table.transpose.hashes.first
+  array['city']['name'].to_s.should == expected_data['name']
 end
 

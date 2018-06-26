@@ -4,5 +4,5 @@ Feature: user request weather
     Given an registered user in the system
     When the user requests the weather of "Lima" city
     Then the system returns the following information:
-      | name    | lima |
+      | name    | Lima |
       | country | PE   |
